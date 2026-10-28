@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Techology Day</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to event of faculty</h1>
+    </header>
+
+    <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#register">REGISTER</a>
+        <a href="eventschedule">EVENT SCHEDUKE</a>
+    </nav>
+
+    <section id="about">
+        <h2>about the event</h2>
+        <p> Faculty Techology Day introdunces student to ai and modern techology </p>
+        
+        <article>
+            <h3>Speaker 1 : Introduction about web design</h3>
+            <p>student will a learn how to create a web</p>
+        </article>
+
+        <article>
+            <h3>speaker 2 : Introduction about a machine learning</h3>
+            <p>Student learn a subset of artificial intelligence (AI) that uses statistical algorithms to learn patterns from data</p>
+        </article>
+
+        <table boarder = "1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+
+            <tr>
+                <td>8.00 am</td>
+                <td>Registration</td>
+                <td>Dp2</td>
+                <td>Dr ali</td>
+            </tr>
+
+            <tr>
+                <td>9.00 am</td>
+                <td>Opening event</td>
+                <td rowspan="2">Dp2</td>
+                <td>Event Director</td>
+            </tr>
+
+            <tr>
+                <td>10.00 am</td>
+                <td>Web design workshop</td>
+                <td>Dp2</td>
+                <td>DR Abu</td>
+            </tr>
+
+            <tr>
+                <td>12.00 pm</td>
+                <th colspan="3">Lunch Break</th>
+            </tr>
+
+            <tr>
+                <td>1.30 pm</td>
+                <td>Machine learning workshop</td>
+                <td>Dp2</td>
+                <td>Dr Ghazali</td>
+            </tr>
+
+            <tr>
+                <td>3.30 pm</td>
+                <td>Closing Ceremory</td>
+                <td>Dp2</td>
+                <td>Event Director</td>
+
+            </tr>
+
+
+        </table>
+    </section>
+
+    <section id ="REGISTER">
+        <h2>Registration form</h2>
+        <form action="register.html" method="post"></form>
+        <label for="fullname">FULL NAME:</label><br>
+        <input type="text" id="fullname" name="fullname"><br><br>
+
+        <label for="matricnumber">MATRIC NUMBER:</label><br>
+        <input type="text" id="matricnumber" name="matricnumber"><br><br>
+
+        <label for="e-mail">E-MAIL:</label><br>
+        <input type="text" id="e-mail" name="e-mail"><br><br>
+
+        <p>Year of study</p>
+        <input type="radio" id="year1" name="year_study" value="YEAR 1">
+        <label for="year1">YEAR 1</label><br>
+
+        <input type="radio" id="year2" name="year_study" value="YEAR 2">
+        <label for="year2">YEAR 2</label><br>
+
+        <input type="radio" id="year3" name="year_study" value="YEAR 3">
+        <label for="year3">YEAR 3</label><br>
+
+        <h2>SESSIONS STUDENT WANT TO JOIN</h2>
+        <form action="/action_page.php">
+  <input type="checkbox" id="Web" name="web" value="web">
+  <label for="web"> Introduction about web design </label><br>
+
+  <input type="checkbox" id="Web" name="web" value="web">
+  <label for="web"> Introduction about a machine learning </label><br>
+
+  <h2> Programme or Faculty </h2>
+  <form action="/action_page.php"></form>
+  <p>Select your Programme </p>
+  <label for="Programme">Choose your Programme:</label>
+  <select name="Programme" id="Programme">
+    <option value="Software Engineer">Software Engineer</option>
+    <option value="Information Maritime">Information Maritime</option>
+    <option value="Monile computing">Mobile Computing</option>
+    <option value="analytical data">analytical data</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+    </section>
+</body>
+
+</html>
