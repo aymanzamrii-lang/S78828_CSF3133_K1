@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Course Feedback</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+
+    <nav>
+        <a href="#results">Results</a> |
+        <a href="#form">Feedback Form</a> |
+        <a href="#comments">Student Comments</a>
+    </nav>
+
+    <section id="results">
+        <h2>Feedback Summary</h2>
+
+        <table border="1">
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">Tables and Forms</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>HTML Forms</td>
+                <td>4.2</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td rowspan="2">Mini Project</td>
+                <td>4.5</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>4.8</td>
+            </tr>
+
+            <tr>
+                <th colspan="2">Average Rating</th>
+                <td>4.4</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+
+        <form action="submit_feedback.php" method="post">
+
+            <label for="fullname">Name:</label>
+            <input type="text" id="fullname" name="name" required>
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label>Overall rating:</label>
+            <br>
+
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label>
+
+            <input type="radio" id="average" name="rating" value="average">
+            <label for="average">Average</label>
+
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label>
+            <br><br>
+
+            <p>Topics I want more practice on:</p>
+
+            <input type="checkbox" id="html" name="topics[]" value="HTML">
+            <label for="html">HTML Basics</label>
+            <br>
+
+            <input type="checkbox" id="tables" name="topics[]" value="Tables">
+            <label for="tables">Tables</label>
+            <br>
+
+            <input type="checkbox" id="forms" name="topics[]" value="Forms">
+            <label for="forms">Forms</label>
+            <br>
+
+            <input type="checkbox" id="semantic" name="topics[]" value="Semantic HTML">
+            <label for="semantic">Semantic HTML</label>
+            <br><br>
+
+            <label for="section">Section/Group:</label>
+            <select id="section" name="section" required>
+                <option value="">-- Select Group --</option>
+                <option value="A">Group A</option>
+                <option value="B">Group B</option>
+                <option value="C">Group C</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+    <section id="comments">
+        <h2>Student Comments</h2>
+
+        <article>
+            <h3>Student 1</h3>
+            <p>The HTML lessons are useful and easy to understand.</p>
+        </article>
+
+        <article>
+            <h3>Student 2</h3>
+            <p>I would like more practice with HTML forms and tables.</p>
+        </article>
+
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+
+</body>
+</html>
