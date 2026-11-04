@@ -1,0 +1,58 @@
+<!DOCTYPEhtml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3 Exercise</title>
+</head>
+<body>
+
+    <!-- 3. Header Section -->
+    <div>
+        <h1>Website Title <span>- Slogan / Subtitle</span></h1>
+    </div>
+
+    <!-- 4. Content Section -->
+    <div>
+        <!-- First div: Contact Form -->
+        <div>
+            <form action="#">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="contact-date">Preferred Contact Date:</label>
+                <input type="date" id="contact-date" name="contact-date"><br><br>
+
+                <label for="satisfaction">Satisfaction Level:</label>
+                <input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <br>
+
+        <!-- Second div: Inline Calculator -->
+        <div>
+            <form oninput="result.value = parseFloat(num1.value || 0) + parseFloat(num2.value || 0)">
+                <label for="num1">First Number:</label>
+                <input type="number" id="num1" name="num1">
+                
+                +
+                
+                <label for="num2">Second Number:</label>
+                <input type="number" id="num2" name="num2">
+                
+                =
+                
+                <output name="result" for="num1 num2">0</output>
+            </form>
+        </div>
+    </div>
+
+    <!-- 5. Footer Section -->
+    <div>
+        <p>Contact Us: info@example.com | &copy; 2026 All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
