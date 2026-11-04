@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+
+<body>
+
+    <!-- PART 1: ERROR IDENTIFICATION -->
+    <!--
+    Error 1 (Line 1): Missing html in DOCTYPE declaration.
+    Error 2 (Line 9): Incorrect closing position of span.
+    Error 3 (Line 11): Span used instead of div.
+    Error 4 (Line 13): Missing &lt; entity.
+    Error 5 (Line 13): Missing &amp; entity.
+    Error 6 (Line 14): Addition operator joins strings instead of adding numbers.
+    Error 7 (Line 18): emial should be email.
+    Error 8 (Line 22): Incorrect datalist reference.
+    Error 9 (Line 23): Incorrect datalist ID.
+    Error 10 (Line 28): Missing min="0" for adult tickets.
+    Error 11 (Line 30): Missing min="0" for child tickets.
+    Error 12 (Line 32): Range min and max are reversed.
+    Error 13 (Line 33): Incorrect output for attribute.
+    Error 14 (Line 38): &Copy; should be &copy;.
+    Error 15 (Lines 54-55): Duplicate closing body and html tags.
+    -->
+
+    <!-- HEADER SECTION -->
+    <div id="header">
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+    </div>
+
+    <!-- CONTENT SECTION -->
+    <div id="content">
+
+        <h2>Book Your Ticket</h2>
+
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+        <!-- BOOKING FORM -->
+        <form action="booking.php"
+        oninput="total.value = Number(adult.value) + Number(child.value);
+        price.value = (Number(adult.value) * 12) + (Number(child.value) * 8)">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+            placeholder="Enter your name" required autofocus>
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- PHONE NUMBER -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+            placeholder="Enter phone number" required>
+            <br><br>
+
+            <label for="date">Show date:</label>
+            <input type="date" id="date" name="date">
+            <br><br>
+
+            <!-- SHOW TIME -->
+            <label for="time">Show time:</label>
+            <input type="time" id="time" name="time">
+            <br><br>
+
+            <!-- MOVIE DATALIST -->
+            <label for="movie">Movie:</label>
+            <input type="text" id="movie" name="movie" list="movies">
+
+            <datalist id="movies">
+                <option value="Space Rangers">
+                <option value="Kampung Comedy">
+                <option value="Ocean Mystery">
+            </datalist>
+
+            <br><br>
+
+            <!-- ADULT TICKETS -->
+            <label for="adult">Adult tickets (RM12):</label>
+            <input type="number" id="adult" name="adult"
+            min="0" value="0">
+            <br><br>
+
+            <!-- CHILD TICKETS -->
+            <label for="child">Child tickets (RM8):</label>
+            <input type="number" id="child" name="child"
+            min="0" value="0">
+            <br><br>
+
+            <label for="rating">Rate our service:</label>
+            <input type="range" id="rating" name="rating"
+            min="1" max="5" step="1">
+            <br><br>
+
+            <!-- PART 1: TOTAL TICKETS -->
+            Total tickets:
+            <output name="total" for="adult child">0</output>
+
+            <br><br>
+
+            <!-- PART 2: TOTAL PRICE -->
+            Total price: RM
+            <output name="price" for="adult child">0</output>
+
+            <br><br>
+
+            <input type="submit" value="Book Now">
+
+        </form>
+
+    </div>
+
+    <!-- PART 2: SIDEBAR SECTION -->
+    <div id="sidebar">
+
+        <h2>Now Showing</h2>
+
+        <ul>
+            <li>
+                <strong>Space Rangers</strong>
+                <span>PG</span>
+                <a href="https://www.youtube.com/results?search_query=Space+Rangers+trailer">Trailer</a>
+            </li>
+
+            <li>
+                <strong>Kampung Comedy</strong>
+                <span>PG</span>
+                <a href="https://www.youtube.com/results?search_query=Kampung+Comedy+trailer">Trailer</a>
+            </li>
+
+            <li>
+                <strong>Ocean Mystery</strong>
+                <span>13+</span>
+                <a href="https://www.youtube.com/results?search_query=Ocean+Mystery+trailer">Trailer</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div id="footer">
+
+        <p>e-Ticket&reg; – Campus Cinema &lt; RM10 every Tuesday</p>
+
+        <p>&copy; 2026 CineKampus. All rights reserved.</p>
+
+    </div>
+
+</body>
+</html>
