@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        #welcome {
+            background-color: lightblue;
+        }
+
+        #welcome h2 {
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="welcome">
+        <h1>Discover Terengganu</h1>
+        <p>Explore the beauty of Terengganu!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction -->
+    <section id="intro">
+        <h2>Welcome to Terengganu</h2>
+        <p>Discover beautiful islands, beaches and local culture.</p>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+
+        <article class="card">
+            <h3>Redang Island</h3>
+            <p>Beautiful island with clear blue water.</p>
+            <p>
+                <del>RM 450</del>
+                <span class="price">RM 369</span>
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Perhentian Island</h3>
+            <p>Enjoy snorkelling and relaxing beaches.</p>
+            <p>
+                <del>RM 399</del>
+                <span class="price">RM 329</span>
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Kuala Terengganu</h3>
+            <p>Explore local food and traditional culture.</p>
+            <p>
+                <del>RM 250</del>
+                <span class="price">RM 199</span>
+            </p>
+        </article>
+
+        <p>Available trip seats:</p>
+        <meter min="0" max="40" value="28">
+            28 out of 40
+        </meter>
+        28 / 40 seats filled
+
+    </section>
+
+    <!-- Video -->
+    <section id="video">
+        <h2>Visit Terengganu Video</h2>
+
+        <figure>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAHarlgke34/BP5vZJv-S4hpxXHegVHkvw/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHarlgke34&#x2F;BP5vZJv-S4hpxXHegVHkvw&#x2F;watch?utm_content=DAHarlgke34&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Green and Teal Natural Adventure Video</a> by ayman_zamrii
+
+            <figcaption>
+                Discover the beautiful places in Terengganu.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Trip Registration Form -->
+    <section id="trip">
+        <h2>Register Your Interest</h2>
+
+        <form class="trip-form">
+
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <p>Traveller Type:</p>
+
+            <input type="radio" name="traveller" value="student">
+            Student
+
+            <input type="radio" name="traveller" value="staff">
+            Staff
+
+            <input type="radio" name="traveller" value="public">
+            Public
+
+            <p>Interests:</p>
+
+            <input type="checkbox" name="interest" value="islands">
+            Islands
+
+            <input type="checkbox" name="interest" value="food">
+            Food
+
+            <input type="checkbox" name="interest" value="culture">
+            Culture
+
+            <input type="checkbox" name="interest" value="nature">
+            Nature
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Visit Terengganu</p>
+
+        <address>
+            Email:
+            <a href="mailto:info@example.com">
+                info@example.com
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>
