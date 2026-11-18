@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bookstore</title>
+
+    <!-- Part 2: Added second Google Font, Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Error 1 (shop.html, Line 7): Changed stylesheets to stylesheet -->
+    <link rel="stylesheet" href="shop.css">
+
+    <!-- Error 2 (shop.html, Line 10-12): Moved internal CSS from body to head -->
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ERROR LIST - PART 1
+
+    Error 1 (shop.html, Line 7):
+    Incorrect rel attribute. Changed stylesheets to stylesheet.
+
+    Error 2 (shop.html, Line 10-12):
+    Internal CSS was placed inside body. Moved it to head.
+
+    Error 3 (shop.html, Line 13):
+    Navigation menu had no nav element. Added nav.
+
+    Error 4 (shop.html, Line 18):
+    Incorrect inline CSS syntax. Changed color=#1B4F72
+    to color: #1B4F72.
+
+    Error 5 (shop.html, Line 18):
+    Missing header element. Added header.
+
+    Error 6 (shop.html, Line 20):
+    Missing main element. Added main.
+
+    Error 7 (shop.html, Line 20):
+    Table ID did not match CSS selector.
+    Changed product to products.
+
+    Error 8 (shop.css, Line 2):
+    Robotto changed to Roboto.
+
+    Error 9 (shop.css, Line 4):
+    no repeat changed to no-repeat.
+
+    Error 10 (shop.css, Line 5):
+    bacground-position corrected to background-position.
+
+    Error 11 (shop.css, Line 18):
+    display inline changed to display block.
+
+    Error 12 (shop.css, Line 23):
+    li:a:hover corrected to li a:hover.
+
+    Error 13 (shop.css, Line 27):
+    collapsed changed to collapse.
+
+    Error 14 (shop.css, Line 34):
+    nth-child(2) changed to nth-child(even).
+
+    Error 15 (shop.css, Line 37):
+    tr:hovered changed to tr:hover.
+
+    Error 16 (shop.css, Line 45):
+    Added missing semicolon.
+    -->
+
+    <!-- Part 2: Header with background image and white text -->
+    <header id="home">
+        <h1>Campus Bookstore</h1>
+        <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+    <!-- Part 2: Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Part 2: Main content -->
+    <main id="books">
+        <h2>Our Products</h2>
+
+        <p>
+            Welcome to Campus Bookstore.
+            We provide textbooks, stationery and other
+            learning materials for students.
+        </p>
+
+        <!-- Part 1: Corrected table ID to products -->
+        <table id="products">
+            <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Price (RM)</th>
+            </tr>
+
+            <tr>
+                <td>Web Design Basics</td>
+                <td>Textbook</td>
+                <td>45.00</td>
+            </tr>
+
+            <tr>
+                <td>A4 Notebook</td>
+                <td>Stationery</td>
+                <td>6.50</td>
+            </tr>
+
+            <tr>
+                <td>USB Drive 32GB</td>
+                <td>Gadget</td>
+                <td>25.00</td>
+            </tr>
+
+            <tr>
+                <td>Highlighter Set</td>
+                <td>Stationery</td>
+                <td>9.90</td>
+            </tr>
+        </table>
+    </main>
+
+    <!-- Part 2: Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Campus Bookstore</p>
+    </footer>
+
+</body>
+</html>
