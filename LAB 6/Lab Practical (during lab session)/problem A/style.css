@@ -1,0 +1,104 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #205675;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Heading */
+h2 {
+    color: #205675;
+}
+
+/* Input Styling */
+input {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    background-color: #2878ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #174d73;
+}
+
+/* Image Styling */
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    gap: 30px;
+    font-weight: bold;
+}
+
+/* Result */
+#result {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* History Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #205675;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: grey;
+}
